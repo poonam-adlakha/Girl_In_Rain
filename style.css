@@ -268,9 +268,38 @@ body {
 
     50% {
         transform: translate(22%, -9%) rotate(10deg);
-    }
+    }q
 
     100% {
         transform: translate(20%, -10%) rotate(5deg);
     }
 }
+
+.rain1 {
+  width: 5px;
+  height: 80px;
+  background-color: #c5e5f5;
+  position: absolute;
+  top: -80px;
+  animation: fall 1s linear infinite;
+}
+
+@keyframes fall {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+
+
+
+
+
+
+
+
+
+
