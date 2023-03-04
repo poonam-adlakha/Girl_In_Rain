@@ -1,3 +1,12 @@
+// Remove the existing rain drop element and create a new one for each drop
+for (let i = 0; i < 50; i++) {
+  let rainDrop = document.createElement('div');
+  rainDrop.className = 'rain1';
+  rainDrop.style.left = Math.random() * window.innerWidth + 'px';
+  rainDrop.style.animationDelay = Math.random() * 5 + 's';
+  container.appendChild(rainDrop);
+}
+
 var dropCount =  300;
 var w = window.innerWidth;
 var h = window.innerHeight;
